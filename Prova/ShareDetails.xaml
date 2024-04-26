@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Prova.ShareDetails"
+             Title="ShareDetails">
+    
+    <VerticalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+
+            <Label Grid.Row="0" Grid.Column="0" Text="Preço: "></Label>
+            <Label Grid.Row="1" Grid.Column="0" Text="Nome Curto: "></Label>
+            <Label Grid.Row="2" Grid.Column="0" Text="Nome Longo: "></Label>
+            <Label Grid.Row="3" Grid.Column="0" Text="Variação: "></Label>
+            <Label Grid.Row="4" Grid.Column="0" Text="Percentual de Variação: "></Label>
+            <Label Grid.Row="0" Grid.Column="1" x:Name="Price"></Label>
+            <Label Grid.Row="1" Grid.Column="1" x:Name="Name"></Label>
+            <Label Grid.Row="2" Grid.Column="1" x:Name="Long"></Label>
+            <Label Grid.Row="3" Grid.Column="1" x:Name="Change"></Label>
+            <Label Grid.Row="4" Grid.Column="1" x:Name="ChangePercent"></Label>
+            
+        </Grid>
+    </VerticalStackLayout>
+</ContentPage>
