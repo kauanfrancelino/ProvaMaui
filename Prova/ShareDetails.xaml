@@ -18,17 +18,22 @@
                 <ColumnDefinition></ColumnDefinition>
             </Grid.ColumnDefinitions>
 
-            <Label Grid.Row="0" Grid.Column="0" Text="Preço: "></Label>
-            <Label Grid.Row="1" Grid.Column="0" Text="Nome Curto: "></Label>
+            <Label Grid.Row="0" Grid.Column="0" Text="Preço"></Label>
+            <Label Grid.Row="1" Grid.Column="0" Text="Nome Curto"></Label>
             <Label Grid.Row="2" Grid.Column="0" Text="Nome Longo: "></Label>
             <Label Grid.Row="3" Grid.Column="0" Text="Variação: "></Label>
             <Label Grid.Row="4" Grid.Column="0" Text="Percentual de Variação: "></Label>
+            <Label Grid.Row="5" Grid.Column="0" Text="Maior valor de mercado do dia: "></Label>
+            <Label Grid.Row="6" Grid.Column="0" Text="Menor valor de mercado do dia: "></Label>
+
             <Label Grid.Row="0" Grid.Column="1" x:Name="Price"></Label>
             <Label Grid.Row="1" Grid.Column="1" x:Name="Name"></Label>
             <Label Grid.Row="2" Grid.Column="1" x:Name="Long"></Label>
             <Label Grid.Row="3" Grid.Column="1" x:Name="Change"></Label>
             <Label Grid.Row="4" Grid.Column="1" x:Name="ChangePercent"></Label>
-            
+            <Label Grid.Row="5" Grid.Column="1" x:Name="DayHigh"></Label>
+            <Label Grid.Row="6" Grid.Column="1" x:Name="DayLow"></Label>
+
         </Grid>
     </VerticalStackLayout>
 </ContentPage>

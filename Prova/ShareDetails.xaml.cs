@@ -24,12 +24,13 @@ public partial class ShareDetails : ContentPage
         HttpResponseMessage respostaApi = await _client.GetShare(shareSymbol);
         string conteudo = await respostaApi.Content.ReadAsStringAsync();
         Acao acao = JsonConvert.DeserializeObject<Acao>(conteudo);
-
-
+       
         Long.Text = $"{acao.LongName}";
         Name.Text = $"{acao.ShortName}";
         Price.Text = $"{acao.RegularMarketPrice}";
         Change.Text = $"{acao.RegularMarketChange}";
         ChangePercent.Text = $" {acao.RegularMarketChangePercent}%";
+        DayHigh.Text = $"{acao.RegularMarketDayHigh}";
+        DayLow.Text = $"{acao.RegularMarketDayLow}";
     }
 }
